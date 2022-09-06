@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+
+
+       
+
+    <body>
+        <div class = "menu">
+            <div id = "bank">
+                <i class="fa-solid fa-piggy-bank fa-3x"></i>
+                <p id = "bankroll">$500</p>
+            </div>
+            <div class= "controls">
+                <button class="btn3"  onclick="stay()">New Hand</button>
+                <button class="btn"  onclick="hit()">New Game</button>
+            </div>
+        </div>
+        <div class="bj_container">
+            <div class="blackjacktitle">
+                <h1>Blackjack</h1>
+            </div>
+            <div class="bjinterface">
+                <div class="dealer">
+                    
+                    <p>Dealer: <span id="dealer-sum"></span></p>
+                    <div id="dealers-cards">
+                        <img id="hidden" src="./cards/black_joker.png">
+                    </div>
+                </div> 
+                <p id="message"></p>
+                <div class="player">
+                    <p id="cards-el">Player: <span id="dealer-sum"></span></p>
+                        <div id="player-cards">
+
+                        </div>
+
+                        <div class="player-btns">
+                            <button class="btn" id="startGame" onclick="stay()">Stay</button>
+                            <button class="btn" id="startGame" onclick="hit()">Hit</button>
+                            <button class="btn" id="startGame" onclick="startGame()">Double</button>
+                        </div>
+                </div>   
+            </div>
+        </div> 
+        <script src="main.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- <p id="sum-el">Sum:</p> -->
+
+<!-- <button class="btn" id="newCard" onclick="newCard()">New Card</button> -->
